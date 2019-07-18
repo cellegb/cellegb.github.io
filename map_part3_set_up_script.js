@@ -1,10 +1,12 @@
 var ourLoc;
 var view;
 var map;
+var fr;
 
 function init() {
 	// Initalize things here
 	ourLoc = ol.proj.fromLonLat([42.9103, 3.0282]);
+	fr = ol.proj.fromLonLat([46.2276,2.2137]);
 
 	view = new ol.View({
 		center: ourLoc,
@@ -31,7 +33,12 @@ function panHome() {
 	});
 }
 
-
+function france() {
+	view.animate({
+		center: fr, // france location
+		duration: 2000  // Two seconds
+	});
+}
 
 function makeCountryRequest() {
 	var countryName = document.getElementById("country-name").value;
