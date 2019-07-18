@@ -6,7 +6,7 @@ var fr;
 function init() {
 	// Initalize things here
 	ourLoc = ol.proj.fromLonLat([42.9103, 3.0282]);
-	fr = ol.proj.fromLonLat([2.2137,46.2276]);
+	fr = ol.proj.fromLonLat([37.0902, 95.7129]);
 
 	view = new ol.View({
 		center: ourLoc,
