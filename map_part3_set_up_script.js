@@ -2,11 +2,13 @@ var ourLoc;
 var view;
 var map;
 var fr;
+var sp;
 
 function init() {
 	// Initalize things here
 	ourLoc = ol.proj.fromLonLat([42.9103, 3.0282]);
-	fr = ol.proj.fromLonLat([42.9103, 3.0282]);
+	fr = ol.proj.fromLonLat([3.0282, 42.9103]);
+	sp = ol.proj.fromLonLat([40.4637, 3.7492]);
 
 	view = new ol.View({
 		center: ourLoc,
