@@ -1,14 +1,27 @@
 var ourLoc;
 var view;
 var map;
+var cd;
 var fr;
 var sp;
+var it;
+var gr;
+var uk;
+var ch;
+var jp;
+
 
 function init() {
 	// Initalize things here
-	ourLoc = ol.proj.fromLonLat([42.9103, 3.0282]);
-	fr = ol.proj.fromLonLat([3.0282, 42.9103]);
-	sp = ol.proj.fromLonLat([40.4637, 3.7492]);
+	ourLoc = ol.proj.fromLonLat([276.6298, 41.8781]);
+  cd = ol.proj.fromLonLat([250.6298, 55.5017]);
+  fr = ol.proj.fromLonLat([2.2137, 46.2276]);
+  sp = ol.proj.fromLonLat([3.7492, 40.4637]);
+  it = ol.proj.fromLonLat([12.4964, 41.9028]);
+  gr = ol.proj.fromLonLat([24.8093, 35.2401]);
+  uk = ol.proj.fromLonLat([0.1278, 51.5074]);
+  ch = ol.proj.fromLonLat([121.4737, 31.2304]);
+  jp = ol.proj.fromLonLat([139.6503, 35.6762]);
 
 	view = new ol.View({
 		center: ourLoc,
@@ -35,9 +48,58 @@ function panHome() {
 	});
 }
 
-function france() {
-	view.animate({
-		center: fr, // france location
+function canada(){
+  view.animate({
+		center: cd, // "Home" Location
+		duration: 2000  // Two seconds
+	});
+}
+
+function france(){
+  view.animate({
+		center: fr, // "Home" Location
+		duration: 2000  // Two seconds
+  });
+}
+
+function spain(){
+  view.animate({
+		center: sp, // "Home" Location
+		duration: 2000  // Two seconds
+  });
+}
+
+function italy(){
+  view.animate({
+		center: it, // "Home" Location
+		duration: 2000  // Two seconds
+	});
+}
+
+function crete(){
+  view.animate({
+		center: gr, // "Home" Location
+		duration: 2000  // Two seconds
+	});
+}
+
+function unitedk(){
+  view.animate({
+		center: uk, // "Home" Location
+		duration: 2000  // Two seconds
+	});
+}
+
+function china(){
+  view.animate({
+		center: ch, // "Home" Location
+		duration: 2000  // Two seconds
+  });
+}
+
+function japan(){
+  view.animate({
+		center: jp, // "Home" Location
 		duration: 2000  // Two seconds
 	});
 }
