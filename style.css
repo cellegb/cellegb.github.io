@@ -1,0 +1,136 @@
+/*body{
+  background-color: #E5F3F5;
+  text-align: center;
+  line-height: 2.5;
+  font-size: 3;
+}
+
+p,h3{
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.25;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h3{
+  font-size: 1.05em;
+  line-height: 1;
+}
+
+h1{
+  background-color: lavender;
+  font-size: 3em;
+  letter-spacing: 2px;
+  line-height: 3;
+  font-weight: bold;
+}
+
+h2{
+  line-height: 2;
+}
+*/
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button a{
+  color: #f1f1f1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.header {
+  font-family: 'Amatic SC';
+  font-size: 27px;
+  background-color: #f1f1f1;
+  padding: 1px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  z-index: 4;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+  z-index: 4;
+}
+
+li a:hover, .dropdown:hover {
+  background-color: green;
+  z-index: 4;
+}
+
+li.dropdown {
+  display: inline-block;
+  z-index: 4;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+}
+
+.dropdown-content a {
+  color: #f1f1f1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: 4;
+}
+
+.dropdown-content a:hover {background-color: green;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: green;
+}
+
+p{
+  margin-left: 25px;
+  margin-right: 25px;
+}

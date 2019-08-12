@@ -1,51 +1,115 @@
 <!DOCTYPE html>
 
 <html>
-  <link rel="stylesheet" href="style_.css">
-  <head>
-    <title>Marcelle Brooks</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      ul {
-        list-style-type: none;
+<link href="https://fonts.googleapis.com/css?family=Amatic SC" rel="stylesheet">
+<link rel="stylesheet" href = "style.css">  
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font: 400 15px/1.8 "Lato", sans-serif;
+      color: #777;
+    }
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      position: relative;
+      opacity: 0.65;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .bgimg-1 {
+      background-image: url("images/flower.index.jpg");
+      min-height: 100%;
+    }
+    .bgimg-2 {
+      background-image: url("images/flower.index.jpg");
+      min-height: 600px;
+    }
+    .bgimg-3 {
+      background-image: url("images/flower.index.jpg");
+      min-height: 400px;
+    }
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+    }
+    h3 {
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font: 20px "Lato", sans-serif;
+      color: #111;
+    }
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+      }
+    }
+   </style>
+   <title> Marcelle Brooks </title>
+   <style>
+      /* div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      } */
+      body {
         margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
-      li {
-        float: left;
-      }
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      li a:hover {
-        background-color: #111;
       }
   </style>
-  </head>
-  <body>
-    <h1>Marcelle Brooks</h1>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="resume_.html">Resume</a></li>
-      <li><a href="dance.html">Dance</a></li>
-      <li><a href="programs.html">Program Projects</a></li>
-      <li><a href="map.html">Map API code</a></li>
-    </ul>
-    <p><center>### North ABC Avenue, Chicago IL, 606##
-      <br>Phone #: 312-123-4567/ E-mail: mbrooks20@lyceechicago.org
-      </center>
-    </p>
-    <img src="me copy.jpeg"
-      alt="A photo of me."
-      width="247"
-      height="306"
-      title="A photo of me.">
-    <br>
-    </body>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+</head>
+
+<div class="header">
+  <h1>Marcelle Brooks</h1>
+</div>
+
+<!-- <div class="sticky"> -->
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="resume_.html" class="dropbtn">Resume</a></li>
+  <li class="dropdown"> <a href="dance.html" class="dropbtn">Dance</a></li>
+  <li class="dropdown"><a href="programs.html" class="dropbtn">Programming experience</a>
+    <div class="dropdown-content">
+      <a href="#scratch">Scratch</a>
+      <a href="#python">Python</a>
+      <a href="#javascript">JavaScript</a>
+      <a href="#HTMLCSS">HTML and CSS</a>
+    </div>
+  </li>
+  <li class="dropdown"><a href="map.html" class="dropbtn">My travels</a></li>
+</ul>
+
+<body>
+  <div class="bgimg-2">
+    <div class="caption">
+      <br>
+      <br>
+      <br>
+      <span class="border">Marcelle Grace Brooks</span>
+    </div>
+  </div>
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;"><font size="6">Welcome to my website</font></h3>
+    <p><font size="4">I am a high school student at the Lycee Français de Chicago. After a summer immersion program with Girls Who code that the Chicago CNA center, I was inpired to creat a website showing me as a person. I coded this website using HTML, CSS, and some Java script from scratch with informatation I either learned through Girls Who Code or taught myself.</font></p>
+  </div>
+  <div class="bgimg-3">
+    <div class="caption">
+    </div>
+  </div>
+</body>
 </html>
